@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".compare_graph">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="590dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <io.github.farshidroohi.LineChart
+                android:id="@+id/lineChart2"
+                android:layout_width="455dp"
+                android:layout_height="400dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                app:chart_bg_color="#009688"
+                app:chart_line_color="#ffffff"
+                app:chart_line_size="20dp"
+                app:chart_padding_bottom="60dp"
+                app:chart_padding_left="20dp"
+                app:chart_padding_right="20dp"
+                app:chart_padding_top="20dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
